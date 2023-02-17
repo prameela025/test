@@ -1,0 +1,433 @@
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git init
+Initialized empty Git repository in C:/Users/prameela nannapaneni/OneDrive/Desktop/test/.git/
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        1.txt
+        2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git add .
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   1.txt
+        new file:   2.txt
+
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ ls -a
+./  ../  .git/  1.txt  2.txt
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git commit -m "This is my 1st commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'prameela nannapaneni@Prameela.(none)')
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   1.txt
+        new file:   2.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   1.txt
+        modified:   2.txt
+
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git add .
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   1.txt
+        new file:   2.txt
+
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/prameela nannapaneni/OneDrive/Desktop/test/
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git commit -m "this is my 1st message"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'prameela nannapaneni@Prameela.(none)')
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ ^C
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git config --global nannapaneniprameela3@gmail.com
+error: invalid key: nannapaneniprameela3@gmail.com
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git config --global user.email "you@example.com"
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git config --global user.name "Your Name"
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git commit -m "this is my 1st message"
+[master (root-commit) b22bd5a] this is my 1st message
+ 2 files changed, 2 insertions(+)
+ create mode 100644 1.txt
+ create mode 100644 2.txt
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git log
+commit b22bd5a24c1757e7a754e5a013b99e2e8c25b3ab (HEAD -> master)
+Author: Your Name <you@example.com>
+Date:   Fri Feb 10 16:12:39 2023 +0530
+
+    this is my 1st message
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git commit -m "this is my second commit"
+On branch master
+nothing to commit, working tree clean
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git log
+commit b22bd5a24c1757e7a754e5a013b99e2e8c25b3ab (HEAD -> master)
+Author: Your Name <you@example.com>
+Date:   Fri Feb 10 16:12:39 2023 +0530
+
+    this is my 1st message
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git log --summary
+commit b22bd5a24c1757e7a754e5a013b99e2e8c25b3ab (HEAD -> master)
+Author: Your Name <you@example.com>
+Date:   Fri Feb 10 16:12:39 2023 +0530
+
+    this is my 1st message
+
+ create mode 100644 1.txt
+ create mode 100644 2.txt
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git config --global user.email "you@example.com"
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git config --global user.name "Your name"
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git commit -m "this is my second commit"
+On branch master
+nothing to commit, working tree clean
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git add .
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git commit -m "this is my 2nd commit"
+On branch master
+nothing to commit, working tree clean
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ ls -a
+./  ../  .git/  1.txt  2.txt  3.txt
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git add .
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git commit -m "this is my 2nd commit"
+[master e7ec1e6] this is my 2nd commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 3.txt
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git log
+commit e7ec1e6edc7d077522f64112d10c2c2480b4730b (HEAD -> master)
+Author: Your name <you@example.com>
+Date:   Fri Feb 10 16:24:44 2023 +0530
+
+    this is my 2nd commit
+
+commit b22bd5a24c1757e7a754e5a013b99e2e8c25b3ab
+Author: Your Name <you@example.com>
+Date:   Fri Feb 10 16:12:39 2023 +0530
+
+    this is my 1st message
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ ls -a
+./  ../  .git/  1.txt  2.txt  3.txt  4.txt
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git add .
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git commit -m "this is my 3rd message"
+[master 0fe8698] this is my 3rd message
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 4.txt
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git log
+commit 0fe86987ee420f82f7e5b4f9615314125299ff52 (HEAD -> master)
+Author: Your name <you@example.com>
+Date:   Fri Feb 10 16:25:28 2023 +0530
+
+    this is my 3rd message
+
+commit e7ec1e6edc7d077522f64112d10c2c2480b4730b
+Author: Your name <you@example.com>
+Date:   Fri Feb 10 16:24:44 2023 +0530
+
+    this is my 2nd commit
+
+commit b22bd5a24c1757e7a754e5a013b99e2e8c25b3ab
+Author: Your Name <you@example.com>
+Date:   Fri Feb 10 16:12:39 2023 +0530
+
+    this is my 1st message
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git if
+git: 'if' is not a git command. See 'git --help'.
+
+The most similar command is
+        diff
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git diff
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git log --summary
+commit 0fe86987ee420f82f7e5b4f9615314125299ff52 (HEAD -> master)
+Author: Your name <you@example.com>
+Date:   Fri Feb 10 16:25:28 2023 +0530
+
+    this is my 3rd message
+
+ create mode 100644 4.txt
+
+commit e7ec1e6edc7d077522f64112d10c2c2480b4730b
+Author: Your name <you@example.com>
+Date:   Fri Feb 10 16:24:44 2023 +0530
+
+    this is my 2nd commit
+
+ create mode 100644 3.txt
+
+commit b22bd5a24c1757e7a754e5a013b99e2e8c25b3ab
+Author: Your Name <you@example.com>
+Date:   Fri Feb 10 16:12:39 2023 +0530
+
+    this is my 1st message
+
+ create mode 100644 1.txt
+ create mode 100644 2.txt
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ ^C
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git diff 0fe869 e7ec1e
+diff --git a/4.txt b/4.txt
+deleted file mode 100644
+index e69de29..0000000
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ ^C
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git diff e7ec1e 0fe869
+diff --git a/4.txt b/4.txt
+new file mode 100644
+index 0000000..e69de29
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git config --global user.email "prameelanannapaneni@gmail.com"
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git config --global user.name "prameelanannapaneni"
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git branch
+* master
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git branch slave
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        5.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git add.
+gitgit: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git add .
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   5.txt
+
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git checkout
+A       5.txt
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git branch feature
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git checkout
+A       5.txt
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git branch
+  feature
+* master
+  slave
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$ git checkout slave
+Switched to branch 'slave'
+A       5.txt
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (slave)
+$ git log --summary --oneline
+0fe8698 (HEAD -> slave, master, feature) this is my 3rd message
+ create mode 100644 4.txt
+e7ec1e6 this is my 2nd commit
+ create mode 100644 3.txt
+b22bd5a this is my 1st message
+ create mode 100644 1.txt
+ create mode 100644 2.txt
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (slave)
+$ git diff 0fe869 e7ec1e
+diff --git a/4.txt b/4.txt
+deleted file mode 100644
+index e69de29..0000000
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (slave)
+$ git commit -m "this is in slave branch"
+[slave 2301ffe] this is in slave branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 5.txt
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (slave)
+$ git log
+commit 2301ffe0812b9332a7878005d4cdca93bedc6ddd (HEAD -> slave)
+Author: prameelanannapaneni <prameelanannapaneni@gmail.com>
+Date:   Fri Feb 10 17:02:24 2023 +0530
+
+    this is in slave branch
+
+commit 0fe86987ee420f82f7e5b4f9615314125299ff52 (master, feature)
+Author: Your name <you@example.com>
+Date:   Fri Feb 10 16:25:28 2023 +0530
+
+    this is my 3rd message
+
+commit e7ec1e6edc7d077522f64112d10c2c2480b4730b
+Author: Your name <you@example.com>
+Date:   Fri Feb 10 16:24:44 2023 +0530
+
+    this is my 2nd commit
+
+commit b22bd5a24c1757e7a754e5a013b99e2e8c25b3ab
+Author: Your Name <you@example.com>
+Date:   Fri Feb 10 16:12:39 2023 +0530
+
+    this is my 1st message
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (slave)
+$ git merge
+fatal: No remote for the current branch.
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (slave)
+$ git checkout
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (slave)
+$ git merge
+fatal: No remote for the current branch.
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (slave)
+$
+
+
+prameela nannapaneni@Prameela MINGW64 ~/OneDrive/Desktop/test (master)
+$
+
